@@ -291,20 +291,29 @@ header {
 .about-skills {
     padding-bottom: 4rem;
     .progress-bars {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        @media screen and (max-width: 1000px) {
+        width: 90%;
+     }
+        @media screen and (max-width: 600px) {
+        gap: 1.4rem;
+        }
         .progress-bar {
-            display: flex;
-            flex-direction: column;
-            .prog-title {
                 text-transform: uppercase;
                 font-weight: 500;
+                background-color: var(--clr-grey-4);
+                padding: 0.5rem 0.7rem;
+                @media screen and (max-width: 650px) {
+                font-size: 1.2rem;
+             }
             }
             
         }
     }
-}
+
 .stat-title {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -353,7 +362,6 @@ section {
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #49a6e9;
 }
 .sec4 {
     display: none;

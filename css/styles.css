@@ -349,26 +349,38 @@ header {
 }
 
 .about-skills .progress-bars {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-
-.about-skills .progress-bars .progress-bar {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.about-skills .progress-bars .progress-bar .prog-title {
+@media screen and (max-width: 1000px) {
+  .about-skills .progress-bars {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-skills .progress-bars {
+    gap: 1.4rem;
+  }
+}
+
+.about-skills .progress-bars .progress-bar {
   text-transform: uppercase;
   font-weight: 500;
+  background-color: var(--clr-grey-4);
+  padding: 0.5rem 0.7rem;
+}
+
+@media screen and (max-width: 650px) {
+  .about-skills .progress-bars .progress-bar {
+    font-size: 1.2rem;
+  }
 }
 
 .stat-title {
@@ -428,7 +440,6 @@ section {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: #49a6e9;
 }
 
 .sec4 {
