@@ -34,9 +34,60 @@ function PageTransitions(){
             element.classList.add('active');
         }
     } )
+
+    // toggle theme
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click', ()=>{
+        let element = document.body;
+        element.classList.toggle('light-mode')
+    })
 }
 
 
+//contact form
+const messageButton = document.querySelector('.submit-btn');
+const contactModal = document.querySelector('.contact-modal');
+
+messageButton.addEventListener('click', function sendMail(event){
+    let params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    }
+
+    const serviceID = 'service_x9e4stv';
+    const templateID = 'template_1iibw3c';
+    if(params.name === ''){
+        console.log('error-name');
+        
+    } 
+    if (params.email === ''){
+        console.log('error-email');
+    }
+    else {
+        event.preventDefault()
+        console.log(params.name, params.email)
+        emailjs
+        .send(serviceID, templateID, params)
+        .then((res) => {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('message').value = '';
+                console.log(res);
+                contactModal.classList.add('show-modal');
+               
+            })
+        .catch((err) => console.log(err));
+    }
+})
+
+const closeBtn = document.querySelector('.close-modal');
+
+closeBtn.addEventListener('click' , function closeModal(){
+    contactModal.classList.remove('show-modal');
+})
 
 
 PageTransitions();
