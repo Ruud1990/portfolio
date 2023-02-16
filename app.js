@@ -83,6 +83,8 @@ messageButton.addEventListener('click', function sendMail(event){
     }
 })
 
+//message modal
+
 const closeBtn = document.querySelector('.close-modal');
 
 closeBtn.addEventListener('click' , function closeModal(){
