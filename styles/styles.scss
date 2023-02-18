@@ -773,7 +773,9 @@ section {
 .btn-container {
     display: flex;
     align-self: flex-start;
-}
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+}}
 .main-btn {
     position: relative;
     display: flex;
@@ -785,6 +787,12 @@ section {
     margin-right: 1rem;
     border: 1px solid var(--clr-green-dark);
     overflow: hidden;
+    @media screen and (max-width: 600px) {
+        font-size: 1rem;
+             }
+    @media screen and (max-width: 500px) {
+        margin-bottom: 0.5rem;
+             }
     .btn-text { padding: 0 2rem; }
     .btn-icon {
         background-color: var(--clr-green-dark);
