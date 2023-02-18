@@ -150,6 +150,12 @@ header {
   transition: all .4s ease-in-out;
 }
 
+@media screen and (max-width: 650px) {
+  .header-wrapper .header-left .image {
+    display: none;
+  }
+}
+
 .header-wrapper .header-left .image img {
   width: 100%;
   height: 90%;
@@ -173,6 +179,19 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding-right: 12rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-wrapper .header-right {
+    padding-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-wrapper .header-right {
+    padding-right: 5rem;
+    padding-left: 0rem;
+  }
 }
 
 .header-wrapper .header-right .name {
@@ -251,6 +270,12 @@ header {
 .about-me-container .about-me-left {
   padding-right: 4rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-container .about-me-left {
+    padding-right: 2rem;
+  }
 }
 
 .about-me-container .about-me-left p {
@@ -699,6 +724,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding-top: 3.5rem;
+  padding-right: 2.2rem;
 }
 
 @media screen and (max-width: 1095px) {
@@ -707,6 +733,18 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-content-con {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .contact-content-con {
+    font-size: 0.8rem;
   }
 }
 
@@ -720,6 +758,12 @@ header {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-content-con .left-contact h4 {
+    font-size: 1.5rem;
+  }
 }
 
 .contact-content-con .left-contact p {
@@ -740,15 +784,15 @@ header {
 }
 
 .contact-content-con .left-contact .contact-info .contact-item p {
-  margin: .3rem 0 !important;
+  margin: .2rem 0 !important;
   padding: 0 !important;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40px 1fr;
-      grid-template-columns: 40px 1fr;
+  -ms-grid-columns: 30px 1fr;
+      grid-template-columns: 30px 1fr;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
@@ -759,6 +803,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 405px) {
+  .contact-content-con .left-contact .contact-info .contact-item .icon i {
+    font-size: 1rem;
+  }
 }
 
 .contact-content-con .left-contact .contact-icon {
@@ -811,6 +861,13 @@ header {
           flex: 3;
   margin-left: 3rem;
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-content-con .right-contact {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .contact-content-con .right-contact .input-control {
@@ -1151,6 +1208,12 @@ section {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .main-title h2 {
+    font-size: 3rem;
+  }
 }
 
 .main-title h2 span {
