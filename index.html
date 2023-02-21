@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal page - Krzysztof Prońko Web Developer">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=League+Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -18,6 +19,16 @@
       </script>
 </head>
 <body class="main">
+    
+        <div class="language-btn">
+            <div class="language-selected">
+                        ENG
+                    </div>
+                    <ul>
+                        <li><a href="#" class="pl">PL</a></li> <!-- pt-BR -->
+                        <li><a href="#" class="eng">ENG</a></li> <!-- en-US -->
+                    </ul>
+        </div>
     <header class="section sec1 header active" id="home">
         <div class="header-wrapper">
             <div class="header-left">
@@ -27,12 +38,12 @@
                 </div>
             </div>
             <div class="header-right">
-                <h1 class="name">
+                <h1 class="name" >
                     Hi, I'm <span>Krzysztof Prońko</span><br>
-                    <h2>A Front-end Web Developer</h2>
+                    <h2>Front-end Web Developer</h2>
                 </h1>
-                <p>
-                    I'm looking for a job as Front-end Web Developer, I love to create beautiful, modern and functional websites.
+                <p class="name-desc">
+                    I am looking for a job as Front-end Web Developer, I love to create beautiful, modern and functional websites.
                     
                 </p>
                 <div class="btn-container">
@@ -46,7 +57,7 @@
     </header>
     <main>
         <section class="section sec2 about" id="about-me">
-            <div class="main-title">
+            <div class="main-title about-me-title">
                 <h2>About <span>me</span></h2>
             </div>
             <div class="about-me-container">
@@ -101,43 +112,42 @@
                 <h4 class="stat-title">My Skills</h4>
                 <div class="progress-bars">
                     <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        
+                        <p class="prog-title">html5</p>  
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">css3</p>
-                        
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">SASS</p>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">javascript</p>
-                        
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        
+                        <p class="prog-title">ReactJS</p>  
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">Git</p>
-                        
+                        <p class="prog-title">Git</p> 
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">Github</p>
-                        
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">figma</p>
-                        
+                        <p class="prog-title">Figma</p>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Deploying</p>
                     </div>
                 </div>
                 
             </div>
         </section>
         <section class="section sec3 projects" id="projects">
-            <div class="main-title">
+            <div class="main-title projects-title">
                 <h2>My <span>Portfolio</span></h2>
             </div>
                 <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
+                Here is some of my work that I have done in various programming languages.
             </p>
              <div class="portfolios">
                 <div class="portfolio-item">
@@ -154,7 +164,7 @@
                                 <i class="fas fa-globe"></i>
                             </a>
                         </div>
-                        <div class="project-text">
+                        <div class="project-text gym-app">
                                 <h4>
                                     Be Fit App
                                 </h4>
@@ -178,12 +188,12 @@
                                 <i class="fas fa-globe"></i>
                             </a>
                         </div>
-                        <div class="project-text">
+                        <div class="project-text restaurant">
                                 <h4>
                                     Restaurant Page
                                 </h4>
                                 <p>
-                                   Page for fiction restaurant. Presents information about restaurant, filtered menu, gallery, guests opinions and QA. Project uses Html, CSS and Vanilla Js. As module bundler uses Parcel.
+                                   Page for fiction restaurant. Presents information about restaurant, filtered menu, gallery, guests opinions and QA. Integrated with Messenger.Project uses Html, CSS and Vanilla Js. As module bundler uses Parcel.
                                 </p>
                         </div>
                     </div>
@@ -202,7 +212,7 @@
                                 <i class="fas fa-globe"></i>
                             </a>
                         </div>
-                        <div class="project-text">
+                        <div class="project-text quiz-app">
                                 <h4>
                                     Quiz App Millionaires
                                 </h4>
@@ -217,12 +227,12 @@
             <div class="contact-modal">
             <div class="modal-left"><i class="fa fa-solid fa-envelope"></i></div>
             <div class="modal-right">
-              <h4>Message sent</h4>
+              <h4 class="message-title">Message sent</h4>
               <button class="close-modal btn">ok</button>
             </div>
           </div>
             <div class="contact-container">
-                <div class="main-title">
+                <div class="main-title contact-title">
                     <h2>Contact <span>Me</span></h2>
                 </div>
                 <div class="contact-content-con">
