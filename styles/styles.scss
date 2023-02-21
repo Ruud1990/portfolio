@@ -154,23 +154,34 @@ header {
         justify-content: center;
         padding-right: 12rem;
          @media screen and (max-width: 1000px) {
-        padding-right: 8rem;
+        padding-right: 7rem;
   }
          @media screen and (max-width: 450px) {
-        padding-right: 5rem;
+        padding-right: 4rem;
         padding-left: 0rem;
   }
         .name {
             font-size: 3rem;
             margin-top: 1rem;
+            @media screen and (max-width: 600px) {
+            font-size: 2rem;
+  }
             span { 
                 color: var(--clr-primary-4);
             }
         }
-        p {
-            margin: 2rem 0;
-            line-height: 2rem;
+    }
+    p {
+        margin: 2rem 0;
+        line-height: 2rem;
+        @media screen and (max-width: 600px) {
+            line-height: 1.5rem;
         }
+    }
+    h2 {
+       @media screen and (max-width: 600px) {
+        font-size: 1.2rem;
+} 
     }
 }
 

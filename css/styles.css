@@ -184,13 +184,13 @@ header {
 
 @media screen and (max-width: 1000px) {
   .header-wrapper .header-right {
-    padding-right: 8rem;
+    padding-right: 7rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .header-wrapper .header-right {
-    padding-right: 5rem;
+    padding-right: 4rem;
     padding-left: 0rem;
   }
 }
@@ -200,13 +200,31 @@ header {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .header-wrapper .header-right .name {
+    font-size: 2rem;
+  }
+}
+
 .header-wrapper .header-right .name span {
   color: var(--clr-primary-4);
 }
 
-.header-wrapper .header-right p {
+.header-wrapper p {
   margin: 2rem 0;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrapper p {
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrapper h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .about-me-container {
