@@ -166,6 +166,12 @@ langBtnPl.addEventListener('click' , function(){
                                 <p>
                                    Qiuz pozwala użytkownikowi wcielić się w rolę uczestnika programu TV i sprawdzić swoją wiedzę w 15 pytaniach. Projekt powstał przy użyciu Create React App, React, Html, Css i prettier. Udostępniony na Netlify.
                                 </p>`
+                document.querySelector('.struzik').innerHTML = ` <h4>
+                                    Strona OSK Struzik
+                                </h4>
+                                <p>
+                                   Strona dla Szkoły Nauki Jazdy z Legnicy. Projekt oparty na HTML, CSS i Javascript. Jako narzędzia wykorzystano Figmę oraz Email JS. Strona jest zintegrowana z messengerem.
+                                </p>`
                 document.querySelector('.message-title').textContent = 'Wiadomość wysłana';
                 document.querySelector('.left-contact').innerHTML = `<h4>Skontaktuj się ze mną!</h4>
                         <p>
@@ -305,6 +311,12 @@ langBtnEng.addEventListener('click' , function(){
                                 </h4>
                                 <p>
                                    Quiz allows user test general knowledge in fifteen questions and feel like participant of the popular TV-Show. Project configurated by Create React App uses React, Html, Css and prettier. Deployed on Netlify.
+                                </p>`
+                document.querySelector('.struzik').innerHTML = ` <h4>
+                                    OSK Struzik
+                                </h4>
+                                <p>
+                                   Page for real driving school from Legnica. Project uses HTML, CSS and Javascript. Design prepared in Figma, integrated with messenger, Email JS as tool for contact form.
                                 </p>`
                 document.querySelector('.message-title').textContent = 'Message sent';
                 document.querySelector('.left-contact').innerHTML = `<h4>Contact me here</h4>
