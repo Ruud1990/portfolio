@@ -248,7 +248,7 @@ langBtnEng.addEventListener('click' , function(){
     document.querySelector('.name').innerHTML = `<h1 class="name" >
                     Hi, I'm <span>Krzysztof Prońko</span><br>
                 </h1>`;
-    document.querySelector('.name-desc').textContent = 'I amm looking for a job as Front-end Web Developer, I love to create beautiful, modern and functional websites.';
+    document.querySelector('.name-desc').textContent = 'I am looking for a job as Front-end Web Developer, I love to create beautiful, modern and functional websites.';
     document.querySelector('.about-me-title').innerHTML = `<h2>About <span>me</span></h2>`;
     document.querySelector('.about-me-left').innerHTML = `
     <h4>Information About me</h4>
